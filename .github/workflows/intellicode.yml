@@ -13,6 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - uses: actions/checkout@v1
     - uses: osobeso/vsic-trainer@demo
       with:
         pat: ${{ secrets.VSIC_TOKEN }}
