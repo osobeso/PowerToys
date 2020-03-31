@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: osobeso/vsic-trainer@demo
       with:
-        pat: ${ secrets.VSIC_TOKEN }
+        pat: ${{ secrets.VSIC_TOKEN }}
