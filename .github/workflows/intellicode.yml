@@ -1,0 +1,17 @@
+name: IntelliCode Model Trainer C++
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: osobeso/vsic-trainer@demo
+      with:
+        pat: ${ secrets.VSIC_TOKEN }
